@@ -10,8 +10,7 @@ app = Gallon()
 
 @app.get("/")
 def ask(request:Request):
-	print(request.query)
-	text = request.path_params
+	text = request.query.get("q", "")
 	response = client.post(
 		URL,
 		headers={"Authorization": "Bearer " + os.environ["OPENAI_API_KEY"], "Content-Type": "application/json"},
