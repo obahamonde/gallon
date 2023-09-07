@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "gallon"
+version = "0.0.5"
+description = ""
+authors = ["Oscar Bahamonde <oscar.bahamonde@aiofauna.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
